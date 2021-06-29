@@ -1,0 +1,45 @@
+import java.util.*;
+
+class evenodd
+
+{
+
+public static void main(String[] args)
+
+{
+
+int n,e=0,o=0;
+
+Scanner sc =new Scanner(System.in);
+
+System.out.println("enter n");
+
+n = sc.nextInt();
+ 
+while (n > 0)
+    
+{
+        
+int rem = n % 10;
+
+if (rem % 2 == 0)
+
+System.out.println(rem+"  even");
+
+        
+else 
+
+System.out.println(rem+"  odd");
+
+        
+n = n / 10;
+
+
+
+}
+
+
+
+}
+
+}
