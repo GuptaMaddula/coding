@@ -1,0 +1,28 @@
+import java.util.*;
+class replace
+{
+public static void main(String args[])
+{
+int reverse=0;
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int x=sc.nextInt();
+int y=sc.nextInt();
+while(n!= 0)   
+{  
+int remainder = n% 10;  
+reverse = reverse * 10 + remainder;  
+n = n/10;  
+}  
+while(reverse>0)
+{
+int r=reverse%10;
+if(r==x)
+System.out.print(y);
+else
+System.out.print(r);
+reverse=reverse/10;
+}
+}
+}
+
