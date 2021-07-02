@@ -1,0 +1,32 @@
+import java.util.*;
+class largest   
+{  
+public static void main(String args[])  
+{  
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();  
+int b=sc.nextInt(); 
+int c=sc.nextInt(); 
+int d=sc.nextInt(); 
+int e=sc.nextInt(); 
+int f=sc.nextInt(); 
+int g=sc.nextInt(); 
+int h=sc.nextInt(); 
+int i=sc.nextInt(); 
+int j=sc.nextInt(); 
+int k=sc.nextInt(); 
+int l=sc.nextInt(); 
+int m=sc.nextInt(); 
+int n=sc.nextInt(); 
+int o=sc.nextInt(); 
+int p=sc.nextInt(); 
+int l1=Math.max(Math.max(a,b),Math.max(c,d));
+int l2=Math.max(Math.max(e,f),Math.max(g,h));
+int l3=Math.max(l1,l2);
+int l4=Math.max(Math.max(i,j),Math.max(k,l));
+int l5=Math.max(Math.max(m,n),Math.max(o,p));
+int l6=Math.max(l4,l5);
+int L=Math.max(l3,l6);
+System.out.println("Largest in given series is" + L);  
+}  
+}  
