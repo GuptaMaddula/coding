@@ -1,0 +1,45 @@
+import java.util.*;
+class alphabetpattern
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int s=2*n-1;
+
+char[][] a=new char[s][s]; 
+char ch='A';
+int start=0;
+int end=s-1;
+while(n!=0)
+{
+for(int i=start;i<=end;i++)
+{
+for(int j=start;j<=end;j++)
+{
+if(i==start||i==end||j==start||j==end)
+a[i][j]=ch;
+}
+}
+n--;
+ch++;
+start++;
+end--;
+}
+for(int i=0;i<s;i++)
+
+{
+
+for( int j=0;j<s;j++)
+
+{
+
+System.out.print(a[i][j]+" ");
+
+}
+
+System.out.println();
+
+}
+}
+}
