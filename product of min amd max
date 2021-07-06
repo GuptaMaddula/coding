@@ -1,0 +1,34 @@
+class Solution{
+    
+    // Function for finding maximum and value pair
+    public static long find_multiplication (int arr[], int brr[], int n, int m) {
+        // Complete the Function
+         for(int i=0;i<n;i++)
+         {     
+            for(int j=i+1;j<n;j++)
+            {     
+               if(arr[i]<arr[j])
+               {    
+                   int temp=arr[i];    
+                   arr[i]=arr[j];    
+                   arr[j]=temp;    
+               }     
+            }     
+        }    
+        for(int i=0;i<m;i++)
+         {     
+            for(int j=i+1;j<m;j++)
+            {     
+               if(brr[i]>brr[j])
+               {    
+                   int temp=brr[i];    
+                   brr[i]=brr[j];    
+                   brr[j]=temp;    
+               }     
+            }     
+        } 
+        return(arr[0]*brr[0]);
+    }
+    
+    
+}
