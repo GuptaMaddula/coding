@@ -1,0 +1,29 @@
+import java.util.*;
+class even1
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int count=0,s=0;
+int n=sc.nextInt();
+int arr[]=new int[n];
+for(int i=0;i<n;i++)
+{
+arr[i]=sc.nextInt();
+}
+for(int i=0;i<n;i++)
+{
+if(arr[i]%2==0)
+count++;
+else
+s++;
+}
+System.out.println("no. of even numbers"+count);
+System.out.println("no. of odd numbers"+s);
+System.out.print(count*s);
+if((count*s)%2==0)
+System.out.print("even");
+else
+System.out.print("odd");
+}
+}
