@@ -9,7 +9,7 @@ String str;
 
 Scanner sc=new Scanner(System.in);
 
-int count=0;
+int sum=0;
 System.out.print("Enter string:");
 
 str=sc.nextLine();
@@ -29,9 +29,9 @@ String str1=ch[i];
 
 int m=str1.length();
 
-count=count+m;
+sum=sum+m;
 }
-System.out.print(count);
+System.out.print(sum);
 }
 }
 
