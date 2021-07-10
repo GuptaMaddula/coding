@@ -1,0 +1,31 @@
+import java.util.*;
+
+class wordsrev
+{
+
+public static void main(String args[])
+
+{
+
+String str="",rev="",reverse="";
+
+Scanner sc=new Scanner(System.in);
+
+System.out.print("Enter string:");
+
+str=sc.nextLine();
+
+char ch[]=str.toCharArray();
+for(int i=ch.length-1;i>=0;i--)
+{
+rev=rev+ch[i];
+}
+String ch1[]=rev.split(" ");
+for(int i=ch1.length-1;i>=0;i--)
+{
+reverse=reverse+ch1[i]+" ";
+}
+System.out.print(reverse);
+}
+}
+
