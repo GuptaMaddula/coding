@@ -1,0 +1,20 @@
+import java.util.*;
+import java.lang.*;
+class strinsert
+{
+public static void main(String[] args)
+{
+Scanner sc=new Scanner(System.in);
+String str=sc.nextLine();
+System.out.print("insert string");
+String ins=sc.next();
+int p=sc.nextInt();
+String ch[]=str.split(" ");
+for(int i=0;i<ch.length;i++)
+{
+StringBuffer sb=new StringBuffer(ch[i]);
+sb.insert(p-1,ins);
+System.out.print(sb.toString()+" ");
+}
+}
+}
