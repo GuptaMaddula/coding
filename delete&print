@@ -8,7 +8,7 @@ public static void main(String args[])
 {
 
 Scanner sc=new Scanner(System.in);
-LinkedList<Integer> x=new LinkedList<Integer>();
+ArrayList<Integer> x=new ArrayList<Integer>();
 
 x.add(10); 
 x.add(20); 
