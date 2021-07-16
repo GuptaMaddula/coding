@@ -16,7 +16,7 @@ x.add(30);
 x.add(40);
 
 x.add(50);
-System.out.println("list is"+x);
+System.out.println(x);
 
 System.out.println("Enter value to delete");
 
