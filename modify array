@@ -1,0 +1,37 @@
+import java.util.*;
+
+class modify
+{
+
+public static void main(String args[])
+
+{
+
+Scanner sc=new Scanner(System.in);
+ArrayList<Integer> x1=new ArrayList<Integer>();
+
+x1.add(10); 
+x1.add(20); 
+x1.add(30); 
+x1.add(40);
+
+x1.add(50);
+
+System.out.println("list is"+x1);
+
+System.out.println("Enter value to modify");
+
+int a=sc.nextInt();
+if(x1.contains(a))
+
+{
+x1.set(x1.indexOf(a),80);
+System.out.print(x1);
+}
+else
+
+System.out.println("false");
+
+}
+
+}
