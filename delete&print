@@ -1,0 +1,36 @@
+import java.util.*;
+
+class delete1
+{
+
+public static void main(String args[])
+
+{
+
+Scanner sc=new Scanner(System.in);
+LinkedList<Integer> x=new LinkedList<Integer>();
+
+x.add(10); 
+x.add(20); 
+x.add(30); 
+x.add(40);
+
+x.add(50);
+System.out.println("list is"+x);
+
+System.out.println("Enter value to delete");
+
+int a=sc.nextInt();
+if(x.contains(a))
+
+{
+x.remove(x.indexOf(a));
+System.out.print(x);
+}
+else
+
+System.out.println("element not found");
+
+}
+
+}
