@@ -17,7 +17,7 @@ x1.add(40);
 
 x1.add(50);
 
-System.out.println("list is"+x1);
+System.out.println(x1);
 
 System.out.println("Enter value to modify");
 
