@@ -1,4 +1,4 @@
-class Solution
+class hashmap
 {
 static int map(int n, String keys[], int arr[], String s)
 {
