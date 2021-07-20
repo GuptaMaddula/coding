@@ -1,0 +1,19 @@
+import java.util.*;
+class hashmap1 
+{
+public static void main(String[] args) 
+{
+HashMap<Integer,String> h = new HashMap<Integer,String>();
+Scanner sc= new Scanner(System.in);
+int a;
+String b;
+int n=sc.nextInt();
+for (int i=0;i<n;i++) 
+{
+a=sc.nextInt();
+b=sc.next();            
+h.put(a, b);
+}    
+System.out.println(h);    
+}
+}
