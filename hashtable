@@ -1,0 +1,23 @@
+import java.util.*;
+class hashtable{
+public static void main(String[] args)
+{
+Scanner sc = new Scanner(System.in);
+int n=sc.nextInt();
+Hashtable<Integer,Integer> h=new Hashtable<Integer,Integer>();
+for(int i=0;i<n;i++)
+{
+int key= sc.nextInt();
+int salary= sc.nextInt();
+h.put(key,salary);
+}
+while(sc.hasNext())
+{
+int key = sc.nextInt();
+if(h.containsKey(key))
+System.out.println(h.get(key)+5000);
+else
+System.out.println("Not found");
+}
+}
+}
