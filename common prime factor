@@ -1,0 +1,48 @@
+import java.util.*;
+class commonfact 
+{
+public static void main(String args[]){
+HashSet<Integer> h1=new HashSet<Integer>();
+HashSet<Integer> h2=new HashSet<Integer>();
+Scanner sc = new Scanner(System.in);
+int sum=0,n,n1;
+System.out.println("enter n");
+n=sc.nextInt();
+for(int i=2;i<n; i++) 
+{
+while(n%i==0) 
+{
+System.out.println(i+" ");
+h1.add(i);
+n=n/i;
+}
+}
+if(n>2) 
+{
+System.out.println(n);
+h1.add(n);
+}
+System.out.println("enter n1");
+n1=sc.nextInt();
+for(int j=2;j<n1; j++) 
+{
+while(n1%j==0) 
+{
+System.out.println(j+" ");
+h2.add(j);
+n1=n1/j;
+}
+}
+if(n1>2) 
+{
+System.out.println(n1);
+h2.add(n1);
+}
+h1.retainAll(h2);
+for(Integer i:h1)
+{
+sum=sum+i;
+}
+System.out.print("sum="+sum);
+}
+}
