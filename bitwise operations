@@ -1,0 +1,35 @@
+import java.util.*;
+class bitwise{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int testcases=sc.nextInt();
+while(testcases>0)
+{
+int a=sc.nextInt();
+int b=sc.nextInt();
+int c=sc.nextInt();
+Geeks g=new Geeks();
+g.bitWiseOperation(a,b,c);
+}testcases--;
+}
+} 
+class Geeks
+{
+   
+    static void bitWiseOperation(int a, int b, int c) {
+
+        // code here
+        int d=0,f=0,g=0,e=0;
+        d = a ^ a;
+        System.out.println(d);
+        e = c ^ b;
+        System.out.println(e);
+        f = a & b;
+        System.out.println(f);
+        g = c | (a ^ a);
+        System.out.println(g);
+        e = ~e;
+        System.out.println(e);
+    }
+}
