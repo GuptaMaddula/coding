@@ -1,0 +1,39 @@
+import java.util.*;
+class subarr
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int count=0,prefix=0;
+System.out.print("enter n");
+int n=sc.nextInt();
+System.out.print("enter elements");
+int arr[]=new int[n];
+for(int i=0;i<n;i++)
+{
+arr[i]=sc.nextInt();
+}
+System.out.print("enter k");
+int k=sc.nextInt();
+HashMap<Integer,Integer> dic = new HashMap<Integer,Integer>();
+dic.put(0,1);
+int l=arr.length;
+for(int i=0;i<l;i++)
+{
+prefix = prefix+arr[i];
+int r= prefix%k;
+if(r<0)
+r=r+k;
+if(dic.containsKey(r))
+{
+count= count+dic.get(r);
+dic.put(r,dic.get(r)+1);
+}
+else
+{
+dic.put(r,1);
+}
+}
+System.out.println(count);
+}
+}
